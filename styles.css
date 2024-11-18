@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1d1d1d, #4c4c4c);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.date {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.clock {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.footer {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.converter {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.converter label {
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+}
+
+.converter input {
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+
+.converter button {
+    padding: 10px;
+    background-color: #1d1d1d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.converter button:hover {
+    background-color: #4c4c4c;
+}
+/* ... (existing CSS styles) ... */
+
+/* Additional styles for better layout and responsiveness */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.converter {
+    margin-top: 40px;
+}
+
+.conversion-form {
+    margin-bottom: 20px;
+}

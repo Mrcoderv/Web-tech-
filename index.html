@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Clock with AD-BS Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="lib/ad-bs-converter.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ad-bs-converter@latest/dist/ad-bs-converter.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h1 class="title">Current Date and Time</h1>
+            <div class="date" id="date"></div>
+            <div class="clock" id="clock"></div>
+            <p class="footer">Refreshing every second</p>
+        </section>
+
+        <section class="converter">
+            <h2 class="title">AD to BS / BS to AD Conversion</h2>
+            <div class="conversion-form">
+                <label for="adDate">Enter AD Date (yyyy-mm-dd):</label>
+                <input type="date" id="adDate" placeholder="YYYY-MM-DD">
+                <button onclick="convertToBS()">Convert to BS</button>
+                <div id="bsResult"></div>
+            </div>
+            <div class="conversion-form">
+                <label for="bsDate">Enter BS Date (yyyy-mm-dd):</label>
+                <input type="text" id="bsDate" placeholder="YYYY-MM-DD">
+                <button onclick="convertToAD()">Convert to AD</button>
+                <div id="adResult"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Raghav Vian Panthi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/ad-bs-converter@latest/dist/ad-bs-converter.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
