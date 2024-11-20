@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .form-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 50px auto;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="url"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background: #00f2fe;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #4facfe;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Upload Your Project</h2>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="creatorName">Your Name:</label>
+                <input type="text" id="creatorName" name="creatorName" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="projectName">Project Name:</label>
+                <input type="text" id="projectName" name="projectName" placeholder="Enter project name" required>
+            </div>
+            <div class="form-group">
+                <label for="projectLink">Project Link:</label>
+                <input type="url" id="projectLink" name="projectLink" placeholder="Enter project link" required>
+            </div>
+            <button type="submit">Submit Project</button>
+        </form>
+    </div>
+</body>
+</html>
