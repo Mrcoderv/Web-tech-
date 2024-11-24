@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <h2>Fill up the form below:</h2>
+    <form method="post">
+      <div class="form-group">
+      <div class="formip">
+        <label for="fname">First Name</label>
+        <input type="text"  id="fname" required>
+        <label for="lname">Last Name</label>
+        <input type="text"  id="lname" required>
+        <label for="Eroll">Exam Roll no</label>
+        <input type="text"  id="Eroll" required>
+      </div> 
+      <div class="radio">
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+      </div>
+      
+         <select id="faculty">
+            <option value="none" hidden>select your faculty</option>
+            <option value="be">BE</option>
+            <option value="">BBA</option>
+            <option value="">BCA</option>
+            <option value="">BBA-BI</option>
+         </select>
+      </div>
+      <div class="submit">
+        <button value="submit">Submit</button>
+        <button>Cancel</button>
+      </div>
+
+     </div>
+    </form>
+</body>
+</html>

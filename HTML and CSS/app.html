@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  style="display: flex; justify-content: center;position: relative; top: 5vh; height: 100vh; width: 100vw;background-color: bisque;">
+    <div>
+    <table border="1" cellspacing="0" cellpadding="2"   style="background-color: rgb(145, 201, 24);height: 35vh; width: 40%; color: red;">
+        <thead>
+            <th colspan="5">ABC Organization</th>
+            <tr>
+                <th rowspan="2">Emp No.</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Annual Salary Detail</th>
+                <th rowspan="2">Total</th>
+            </tr>
+            <tr>
+                <th>Basic</th>
+                <th>Tax Deduction</th>
+            </tr>
+            <tr>
+                <td>Emp001</td>
+                <td>Ram Sharma</td>
+                <td>Rs.120000</td>
+                <td>6%</td>
+                <td>112800</td>
+            </tr>
+            <tr>
+                <td>Emp002</td>
+                <td>Sharmila Rai</td>
+                <td>Rs.140000</td>
+                <td>6%</td>
+                <td>131600</td>
+            </tr>
+            <tr>
+                <td>Emp003</td>
+                <td>Nirmala Shrestha</td>
+                <td>Rs.15000</td>
+                <td>6%</td>
+                <td>14100</td>
+            </tr>
+        </thead>
+    </table>
+    <h2>Fill up the form given below</h2>
+    </div>
+   <div style="position: relative; top: 45vh; right: 25%;border: 1px solid black;border-radius: 5px; height: fit-content; width: 30%;">
+    <form method="post" target="_blank" style="background-color: aqua;color: red;">
+    <label for="name" style=" margin: 20px;margin-top: 10px;">Name</label><br>
+    <input type="text" id="name" placeholder="Enter Name"; style="padding-bottom:10px; margin: 20px; width: 90%;" required><br>
+    
+    <label for="add"  style=" margin: 20px;">Address</label><br>
+    <input type="text" id="add" placeholder="Enter Address";  style="padding-bottom:10px;margin: 20px;  width: 90%;" required><br>
+    
+    <label for="email" style=" margin: 20px;">Email</label><br>
+    <input type="email" id="email" placeholder="Enter email"; style="padding-bottom:10px;margin: 20px;  width: 90%;" required> <br>
+    
+    <label for="pw" style=" margin: 20px;">Password</label><br>
+    <input type="password" id="pw" placeholder="Enter password"; style="padding-bottom:10px;margin: 20px;  width: 90%;" required> <br> 
+
+    <button style=" margin-left: 40%;margin-bottom: 5%;border: 0;">Submit</button>
+    </form>
+   </div>
+</body>
+</html>
